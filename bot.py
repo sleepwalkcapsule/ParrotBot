@@ -5,9 +5,6 @@ import settings
 
 logging.basicConfig(filename='bot.log', level=logging.INFO)
 
-# PROXY = {'proxy_url': 'socks5h://t3.learn.python.ru:1080',
-#     'urllib3_proxy_kwargs': {'username': 'learn', 'password': 'python'}}
-
 def greet_user(update, context):
     print("Вызван/start")
     update.message.reply_text('Привет, пользователь! Ты вызвал команду /start')
